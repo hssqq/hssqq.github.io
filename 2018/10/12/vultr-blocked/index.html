@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 
-  <html class="light page-archives2018">
+  <html class="light page-post">
 
 
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2018 | 胡言乱语</title>
+  <title>vultr控制台连不上的替代方案 | 胡言乱语</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -15,13 +15,17 @@
     <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
   
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="胡言乱语">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="土法解决vultr vps被墙掉的问题今天发现了一个很粗暴的办法，下面来讲一讲   vultr的日本ip很容易被墙掉，具体体现在网页console和shell输入密码后都不能登陆，前者提示login incorrect，后者提示access denied   但是，美国ip相对不那么容易被墙，vultr又有免费snapshot而且是按时间收钱，那么emmm完全可以开一个美国ip在一小时之内（0.0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vultr控制台连不上的替代方案">
+<meta property="og:url" content="http://yoursite.com/2018/10/12/vultr-blocked/index.html">
 <meta property="og:site_name" content="胡言乱语">
+<meta property="og:description" content="土法解决vultr vps被墙掉的问题今天发现了一个很粗暴的办法，下面来讲一讲   vultr的日本ip很容易被墙掉，具体体现在网页console和shell输入密码后都不能登陆，前者提示login incorrect，后者提示access denied   但是，美国ip相对不那么容易被墙，vultr又有免费snapshot而且是按时间收钱，那么emmm完全可以开一个美国ip在一小时之内（0.0">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-10-12T05:20:12.169Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="胡言乱语">
+<meta name="twitter:title" content="vultr控制台连不上的替代方案">
+<meta name="twitter:description" content="土法解决vultr vps被墙掉的问题今天发现了一个很粗暴的办法，下面来讲一讲   vultr的日本ip很容易被墙掉，具体体现在网页console和shell输入密码后都不能登陆，前者提示login incorrect，后者提示access denied   但是，美国ip相对不那么容易被墙，vultr又有免费snapshot而且是按时间收钱，那么emmm完全可以开一个美国ip在一小时之内（0.0">
 
   
 
@@ -82,17 +86,8 @@
     <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
   
 
-  <div class="content content-archive">
-  <div class="page-header">
-
-  
-    <div class="breadcrumb">
-      <div class="location">博客</div>
-      <i class="icon-location"></i>
-    </div>
-  
-
-  
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
     <a class="toolbox-entry" href="/">
       <span class="toolbox-entry-text">盒子</span>
@@ -182,67 +177,114 @@
   </div>
 
 
+</div>
 
-  <div class="box-blog-info">
-    <a class="avatar" href="/">
-      <img src="/images/avatar.jpg" alt="" />
-    </a>
-    <div class="info">
-      <h3 class="name" style="font-family: calligraffittiregular">
-        治愈之主 离央怜
-      </h3>
-      <div class="slogan">
-        胡言乱语 涂涂抹抹
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#土法解决vultr-vps被墙掉的问题"><span class="toc-text">土法解决vultr vps被墙掉的问题</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-vultr-blocked" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">vultr控制台连不上的替代方案</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2018.10.12</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>离央怜</span>
+        </span>
+      
+
+      
+
+
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h2 id="土法解决vultr-vps被墙掉的问题"><a href="#土法解决vultr-vps被墙掉的问题" class="headerlink" title="土法解决vultr vps被墙掉的问题"></a>土法解决vultr vps被墙掉的问题</h2><p>今天发现了一个很粗暴的办法，下面来讲一讲  </p>
+<p>vultr的日本ip很容易被墙掉，具体体现在网页console和shell输入密码后都不能登陆，前者提示login incorrect，后者提示access denied  </p>
+<p>但是，美国ip相对不那么容易被墙，vultr又有免费snapshot而且是按时间收钱，那么emmm<br>完全可以开一个美国ip在一小时之内（0.005美元）之内搞定，然后再开日本ip恢复过来，美滋滋  </p>
+<p>日本ip的ping在200以下，美西动不动就400往上，还是有实际意义的</p>
+
+    
+  </div>
+
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持forsigner</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="" alt="">
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="/images/qr-alipay.png" alt="">
+          </li>
+        
+        </ul>
       </div>
     </div>
   </div>
 
-</div>
 
-
-  <div class="post-list-box archive-body">
-    <ul class="list-post">  <li class="item-year item item-title item-title-3">
-    <a href="/archives/2018" class="text-year">
-      2018
-      <i class="icon-gou"></i>
-      
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2018/10/11/hello-world/">
+        <i class="icon icon-angle-left"></i>
     </a>
-  </li>
-<li class="item-post item">
-  <span class="post-date">10-12</span>
-
-  
-  <a class="post-title" href="/2018/10/12/vultr-blocked/">vultr控制台连不上的替代方案</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">10-11</span>
-
-  
-  <a class="post-title" href="/2018/10/11/hello-world/">Hello World</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">10-11</span>
-
-  
-  <a class="post-title" href="/2018/10/11/firstPost/">测试</a>
-
-
-</li>
-</ul>
+    <a class="hide pull-right" href="/">
+        <i class="icon icon-angle-right"></i>
+    </a>
   </div>
 
-  <div class="archive-footer">
-    
 
-  </div>
+
+
+
+   
+      <div class="git"></div>
+   
 </div>
 
 
-
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
 
 
 
@@ -341,6 +383,45 @@
 </div>
 
 
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'http://yoursite.com/2018/10/12/vultr-blocked/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//forsigner.disqus.com/count.js" async></script>
+
+
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+  </div>
 
   
 
