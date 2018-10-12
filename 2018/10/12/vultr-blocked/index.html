@@ -15,17 +15,17 @@
     <meta name="keywords" content="随笔，学习笔记，画画" />
   
 
-  <meta name="description" content="土法解决vultr vps被墙掉的问题今天发现了一个很粗暴的办法，下面来讲一讲   vultr的日本ip很容易被墙掉，具体体现在网页console和shell输入密码后都不能登陆，前者提示login incorrect，后者提示access denied   但是，美国ip相对不那么容易被墙，vultr又有免费snapshot而且是按时间收钱，那么emmm完全可以开一个美国ip在一小时之内（0.0">
+  <meta name="description" content="土法解决vultr vps被墙掉的问题vultr的日本ip是装小灰机比较受欢迎的。但是它很容易被墙掉，可能连开好几个是被墙掉的。   提一下怎么判断是不是被墙了。根据我的实践经验，具体体现在网页console和shell输入密码后都不能登陆，前者提示login incorrect，后者提示access denied。再尝试一下如果ping不到基本就是稳了。 但是，美国ip相对不那么容易被墙，vul">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vultr控制台连不上的替代方案">
 <meta property="og:url" content="http://yoursite.com/2018/10/12/vultr-blocked/index.html">
 <meta property="og:site_name" content="胡言乱语">
-<meta property="og:description" content="土法解决vultr vps被墙掉的问题今天发现了一个很粗暴的办法，下面来讲一讲   vultr的日本ip很容易被墙掉，具体体现在网页console和shell输入密码后都不能登陆，前者提示login incorrect，后者提示access denied   但是，美国ip相对不那么容易被墙，vultr又有免费snapshot而且是按时间收钱，那么emmm完全可以开一个美国ip在一小时之内（0.0">
+<meta property="og:description" content="土法解决vultr vps被墙掉的问题vultr的日本ip是装小灰机比较受欢迎的。但是它很容易被墙掉，可能连开好几个是被墙掉的。   提一下怎么判断是不是被墙了。根据我的实践经验，具体体现在网页console和shell输入密码后都不能登陆，前者提示login incorrect，后者提示access denied。再尝试一下如果ping不到基本就是稳了。 但是，美国ip相对不那么容易被墙，vul">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-12T12:37:20.323Z">
+<meta property="og:updated_time" content="2018-10-12T12:55:40.098Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vultr控制台连不上的替代方案">
-<meta name="twitter:description" content="土法解决vultr vps被墙掉的问题今天发现了一个很粗暴的办法，下面来讲一讲   vultr的日本ip很容易被墙掉，具体体现在网页console和shell输入密码后都不能登陆，前者提示login incorrect，后者提示access denied   但是，美国ip相对不那么容易被墙，vultr又有免费snapshot而且是按时间收钱，那么emmm完全可以开一个美国ip在一小时之内（0.0">
+<meta name="twitter:description" content="土法解决vultr vps被墙掉的问题vultr的日本ip是装小灰机比较受欢迎的。但是它很容易被墙掉，可能连开好几个是被墙掉的。   提一下怎么判断是不是被墙了。根据我的实践经验，具体体现在网页console和shell输入密码后都不能登陆，前者提示login incorrect，后者提示access denied。再尝试一下如果ping不到基本就是稳了。 但是，美国ip相对不那么容易被墙，vul">
 
   
 
@@ -183,10 +183,10 @@
 
   <div class="article-content">
     
-      <h2 id="土法解决vultr-vps被墙掉的问题"><a href="#土法解决vultr-vps被墙掉的问题" class="headerlink" title="土法解决vultr vps被墙掉的问题"></a>土法解决vultr vps被墙掉的问题</h2><p>今天发现了一个很粗暴的办法，下面来讲一讲  </p>
-<p>vultr的日本ip很容易被墙掉，具体体现在网页console和shell输入密码后都不能登陆，前者提示login incorrect，后者提示access denied  </p>
-<p>但是，美国ip相对不那么容易被墙，vultr又有免费snapshot而且是按时间收钱，那么emmm<br>完全可以开一个美国ip在一小时之内（0.005美元）之内搞定，然后再开日本ip恢复过来，美滋滋  </p>
-<p>日本ip的ping在200以下，美西动不动就400往上，还是有实际意义的</p>
+      <h2 id="土法解决vultr-vps被墙掉的问题"><a href="#土法解决vultr-vps被墙掉的问题" class="headerlink" title="土法解决vultr vps被墙掉的问题"></a>土法解决vultr vps被墙掉的问题</h2><p>vultr的日本ip是装小灰机比较受欢迎的。但是它很容易被墙掉，可能连开好几个是被墙掉的。  </p>
+<p>提一下怎么判断是不是被墙了。根据我的实践经验，具体体现在网页console和shell输入密码后都不能登陆，前者提示login incorrect，后者提示access denied。再尝试一下如果ping不到基本就是稳了。</p>
+<p>但是，美国ip相对不那么容易被墙，vultr又有免费snapshot而且是按时间收钱，那么emmm…完全可以开一个美国ip,正常地用ssh连过去在一小时之内（0.005美元）之内搞定各种配置，然后制作一个snapshot。然后再开一个日本ip恢复这份snapshot，相当于用vultr自己的服务器中转了各种配置，亲测这样的服务器是可用的，美滋滋！</p>
+<p>日本ip的ping在200以下，美西动不动就400往上，还是有实际意义的鸭。</p>
 
     
   </div>
