@@ -20,6 +20,6 @@ html{
   /*background: linear-gradient( #5f2c82 , #49a09d);*/
   background-attachment: fixed;
 }
-article-content{
-    font-size: 40px;
+.article-content p {
+    font-size: large;
 }
